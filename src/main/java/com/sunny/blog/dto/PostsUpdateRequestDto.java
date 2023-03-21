@@ -1,10 +1,8 @@
-package com.sunny.blog.web.dto;
+package com.sunny.blog.dto;
 
-import com.sunny.blog.domain.Posts;
 import lombok.Builder;
 import lombok.Getter;
 
-import java.time.LocalDateTime;
 
 @Getter
 public class PostsUpdateRequestDto {

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+<h1> Login Page </h1>
+<hr/>
+<form action="/login" method="POST"> <!--시큐리티에서 /login을 통해 인증처리를 할 예정-->
+    <input type="text" name="userId" placeholder="아이디" autofocus/>
+    <br/>
+    <input type="password" name="password" placeholder="비밀번호"/>
+    <button type="submit">로그인</button>
+</form>
+<a href="/join">회원 가입</a>
+</body>
+</html>

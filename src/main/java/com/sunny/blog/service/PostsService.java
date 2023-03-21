@@ -1,11 +1,11 @@
 package com.sunny.blog.service;
 
 import com.sunny.blog.domain.Posts;
-import com.sunny.blog.domain.PostsRepository;
-import com.sunny.blog.web.dto.PostsListResponseDto;
-import com.sunny.blog.web.dto.PostsResponseDto;
-import com.sunny.blog.web.dto.PostsSaveRequestDto;
-import com.sunny.blog.web.dto.PostsUpdateRequestDto;
+import com.sunny.blog.repository.PostsRepository;
+import com.sunny.blog.dto.PostsListResponseDto;
+import com.sunny.blog.dto.PostsResponseDto;
+import com.sunny.blog.dto.PostsSaveRequestDto;
+import com.sunny.blog.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,3 +1,4 @@
+
 spring:
   h2:
     console:
@@ -11,17 +12,25 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
 
     properties:
       hibernate:
         #show_sql: true
         format_sql: true
 
+  security:
+    user:
+      name: user
+      password: 1234
+
+
 server:
+  port: 7989
   servlet:
     encoding:
       force-response: true
+
 
 logging:
   level:

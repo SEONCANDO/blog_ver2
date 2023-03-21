@@ -1,9 +1,9 @@
 package com.sunny.blog.api;
 
 import com.sunny.blog.service.PostsService;
-import com.sunny.blog.web.dto.PostsResponseDto;
-import com.sunny.blog.web.dto.PostsSaveRequestDto;
-import com.sunny.blog.web.dto.PostsUpdateRequestDto;
+import com.sunny.blog.dto.PostsResponseDto;
+import com.sunny.blog.dto.PostsSaveRequestDto;
+import com.sunny.blog.dto.PostsUpdateRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package com.sunny.blog.web.dto;
+package com.sunny.blog.dto;
 
 import com.sunny.blog.domain.Posts;
 import lombok.Getter;
@@ -6,18 +6,20 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class PostsResponseDto {
+public class PostsListResponseDto {
     private Long id;
     private String title;
     private String writer;
     private String content;
-    private LocalDateTime modifiedTime;
+    private LocalDateTime createdDate;
+    private LocalDateTime modifiedDate;
 
-    public PostsResponseDto(Posts entity){
+    public PostsListResponseDto(Posts entity){
         this.id = entity.getId();
         this.title = entity.getTitle();
         this.writer = entity.getWriter();
         this.content = entity.getContent();
-        this.modifiedTime = entity.getModifiedDate();
+        this.createdDate = entity.getCreatedDate();
+        this.modifiedDate = entity.getModifiedDate();
     }
 }

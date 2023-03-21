@@ -1,7 +1,7 @@
-package com.sunny.blog.web;
+package com.sunny.blog.controller;
 
 import com.sunny.blog.service.PostsService;
-import com.sunny.blog.web.dto.PostsResponseDto;
+import com.sunny.blog.dto.PostsResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,9 +15,14 @@ public class IndexController {
     private final PostsService postsService;
 
     @GetMapping("/")
-    public String index(Model model){
-        model.addAttribute("posts", postsService.findAllDesc());
+    public String index(){
         return "index";
+    }
+
+    @GetMapping("/board")
+    public String board(Model model){
+        model.addAttribute("posts", postsService.findAllDesc());
+        return "board";
     }
 
     @GetMapping("/posts/save")
