@@ -1,3 +1,97 @@
+<style>
+    /* footer */
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 60px 0 0;
+        clear: both;
+    }
+
+    footer,
+    footer a {
+        font-size: 11px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
+
+    footer .shopinfo {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 9px;
+    }
+    footer .shopinfo li {
+        display: inline-block;
+    }
+
+    footer .footer_btn {
+        cursor: pointer;
+    }
+
+    @media (min-width: 1280px) {
+        footer .shopinfo {
+            padding: 0 0 18px;
+        }
+    }
+
+    footer .f_info {
+        display: none;
+        font-size: 10px;
+        line-height: 20px;
+        border-top: 1px solid #dbdbdb;
+        padding: 10px 0 0;
+        text-align: center;
+    }
+
+    footer .f_info span {
+        display: inline-block;
+        padding-left: 15px;
+    }
+
+    .bt_top {
+        position: fixed;
+        right: 30px;
+        bottom: 60px;
+        z-index: 999;
+    }
+    .bt_top a {
+        display: inline-block;
+        background: #f2f2f2;
+        color: #000;
+        width: 40px;
+        text-align: center;
+        height: 40px;
+        line-height: 45px;
+        font-size: 24px;
+    }
+</style>
+
+<footer>
+    <div class="shopinfo">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li>|</li>
+            <li><a href="/shopinfo/company.html">COMPANY</a></li>
+            <li>|</li>
+            <li><a href="/member/agreement.html">AGREEMENT</a></li>
+            <li>|</li>
+            <li>
+                <a href="/member/privacy.html"
+                ><strong>PRIVACY POLICY</strong></a
+                >
+            </li>
+            <li>|</li>
+            <li><a href="/shopinfo/guide.html">GUIDE</a></li>
+            <li>|</li>
+            <li class="footer_btn">+ INFO</li>
+        </ul>
+    </div>
+
+    <div class="bottom_blank"></div>
+    <div class="bt_top"><a href="#">^</a></div>
+</footer>
+
 <!--헤더 실행 후 본문 실행됨, 헤더는 용량이 안 큰 CSS-->
 <!--용량 큰 JS는 body에-->
 
@@ -5,6 +99,7 @@
 <!--부트스트랩은 제이쿼리가 먼저 있어야 함-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 <!--crud.js 추가-->
 <script src="/js/crud.js"></script>

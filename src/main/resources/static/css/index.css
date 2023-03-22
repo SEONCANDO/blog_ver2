@@ -1,0 +1,109 @@
+@import "reset.css";
+
+body, html {
+    height: 100%;
+}
+
+body, code {
+    font-size: 12px;
+    font-family: 'Lato','nanumbarungothic',나눔바른고딕,sans-serif;
+    color: #353535;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Lato','nanumbarungothic',나눔바른고딕,sans-serif;
+}
+
+/* 메인 스크롤 페이지*/
+#fullpage {
+    width: 100%;
+    height: 100%;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px;
+    color: #000;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#menu li.active {
+    background: #666;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #000;
+}
+
+#menu li.active a:hover {
+    color: #000;
+}
+
+#menu li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+#menu li a,
+#menu li.active a {
+    padding: 9px 18px;
+    display: block;
+}
+
+#menu li.active a {
+    color: #fff;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    z-index: 70;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    font-size: 3vw;
+    text-align: center
+}
+
+.section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#section0 {
+    background: url(templates/imgs/01.jpg);
+    height: 100%;
+}
+
+#section0 h1 {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#section1 {
+    background: url(templates/imgs/02.jpg);
+    height: 100%;
+    /*padding: 6% 0 0 0;*/
+}
+
+#section2 {
+    background: url(templates/imgs/03.jpg);
+    height: 100%;
+    /*padding: 6% 0 0 0;*/
+}
+

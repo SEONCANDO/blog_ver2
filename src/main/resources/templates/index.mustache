@@ -1,0 +1,36 @@
+{{>layout/header}}
+<style>
+    #container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    #section0 {
+        background: url("imgs/01.jpg");
+    }
+
+    #section1 {
+        background: url("imgs/02.jpg");
+    }
+
+    #section2 {
+        background: url("imgs/03.jpg");
+    }
+
+</style>
+<div id="container" class="container" style="margin-top: 70px">
+    <div id="fullpage" class="fullpage-wrapper"
+         style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: all 700ms ease 0s;">
+        <div class="section fp-section fp-table active fp-completely" id="section0"
+             style="width: 1920px; height:929px;">
+            <h2>섹션0</h2>
+        </div>
+        <div class="section fp-section fp-table" id="section1" style="width: 1920px; height: 929px;">
+            <h2>섹션1</h2>
+        </div>
+        <div class="section fp-section fp-table" id="section2" style="width: 1920px; height: 929px;">
+            <h2>섹션2</h2>
+        </div>
+    </div>
+</div>
+{{>layout/footer}}
